@@ -1,0 +1,64 @@
+@import "./scss/ress";
+// ----------------Responsive---------------------
+$sp: 768px;
+@mixin sp {
+  @media (max-width: ($sp)) {
+    @content;
+  }
+}
+// -----------------------------------------------
+html {
+  font-size: 62.5%;
+}
+body {
+  color: #333;
+  font-size: 1.2rem;
+  font-family: 游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+a:link, a:visited, a:hover, a:active {
+  color: #d03c56;
+  text-decoration: none;
+}
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+/* module */
+// -----------------------------------------------
+.m-btn{
+  display: block;
+  width: 300px;
+  text-align: center;
+  font-weight: bold;
+  padding: 10px;
+}
+.m-btn-primary{
+  background-color: #1a1a1a;
+  color: #fff;
+}
+.m-btn-secondary{
+  background-color: #fff;
+  color: #1a1a1a;
+}
+.m-btn-cta{
+  background-color: #bd2424;
+  color: #fff;
+}
+.m-ttl{
+  font-size: 30px;
+  font-weight: bold;
+}
+/* utility */
+//---------------------------------
+.u-wrap{
+  width: 1080px;
+  margin: 0 auto;
+}
+.u-ptb-m{
+  padding: 80px 0;
+}
+// -----------------------------------------------
