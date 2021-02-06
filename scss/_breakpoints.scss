@@ -1,0 +1,14 @@
+/* mixin */
+$tab: 1180px; // タブレット
+$sp: 640px; // スマホ
+
+@mixin tab {
+  @media (max-width: ($tab)) {
+    @content;
+  }
+}
+@mixin sp {
+  @media (max-width: ($sp)) {
+    @content;
+  }
+}

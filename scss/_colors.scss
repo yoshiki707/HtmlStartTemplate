@@ -1,0 +1,21 @@
+// colors
+
+// プロジェクトに合わせて変更
+// 背景の色
+$bgMain : #181B39;
+$bgCommon : #F5F5F5;
+// 文字色
+$textColor : #181B39;
+// グラデーション
+// 横のグラデ
+@mixin bgGradationDefault() {
+  background: -moz-linear-gradient(left, #562E8C,#1C2A74 50%, #181B39);
+  background: -webkit-linear-gradient(left, #562E8C,#1C2A74 50%, #181B39);
+  background: linear-gradient(to right, #562E8C,#1C2A74 50%, #181B39);
+}
+// 斜めのグラデ
+@mixin bgGradationSlash() {
+  background: -moz-linear-gradient(top left, #562E8C,#1C2A74 50%, #181B39);
+  background: -webkit-linear-gradient(top left, #562E8C,#1C2A74 50%, #181B39);
+  background: linear-gradient(to bottom right, #562E8C,#1C2A74 50%, #181B39);
+}
